@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steve Authentique | Développeur Web Fullstack</title>
+    <meta name="description" content="Portfolio professionnel de Steve Authentique, développeur web spécialisé en PHP, JavaScript et React. Découvrez mes projets et compétences.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Steve Authentique | Développeur Web Fullstack">
+    <meta property="og:description" content="Concevoir des solutions web robustes et modernes.">
+    <meta property="og:image" content="assets/stockly.webp">
+    <meta property="og:type" content="website">
+</head>
+<body class="dark-mode"> <!-- Added default class -->
+    <canvas id="particles-canvas"></canvas> <!-- Particle background -->
+
+    <header>
+        <div class="logo">Steve.dev</div>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#propos">À propos</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions" style="display: flex; gap: 15px; align-items: center;">
+            <div class="theme-toggle" id="theme-toggle" title="Changer de thème">
+                <span id="theme-icon">🌙</span>
+            </div>
+            <div class="menu-btn" id="menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Section Accueil -->
+        <section id="accueil" class="hero">
+            <div class="curved-title">
+                <svg viewBox="0 0 500 150" width="500">
+                    <path id="curve" d="M 50,120 Q 250,20 450,120" fill="transparent" />
+                    <text font-family="Outfit" font-weight="700" font-size="32" fill="white">
+                        <textPath xlink:href="#curve" startOffset="50%" text-anchor="middle">
+                            Développeur Web – Steve Authentique
+                        </textPath>
+                    </text>
+                </svg>
+            </div>
+            <h1>Concevoir des <span id="typewriter" style="color: var(--accent-color);"></span></h1>
+            <p>Je suis un développeur passionné spécialisé dans la création d'applications web performantes avec PHP, MySQL et React.</p>
+            <div class="hero-btns">
+                <a href="#projets" class="btn btn-primary">Découvrir mes projets</a>
+                <a href="#contact" class="btn btn-secondary">Me contacter</a>
+                <a href="#" class="btn btn-secondary" style="border: 1px solid var(--accent-color); color: var(--accent-color);">Télécharger CV</a>
+            </div>
+        </section>
+
+        <!-- Section À propos -->
+        <section id="propos" class="reveal">
+            <h2 style="margin-bottom: 40px;">À propos de moi</h2>
+            <div class="about-grid">
+                <div class="about-image">
+                    <div class="profile-wrapper">
+                        <img src="assets/profile.jpg" alt="Steve Authentique" class="profile-img">
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p>Développeur web avec une solide expérience dans la conception de systèmes de gestion d'inventaire, de plateformes commerciales et d'applications de services. Mon parcours m'a permis de maîtriser l'ensemble de la chaîne de développement, de la base de données à l'interface utilisateur.</p>
+                    <p style="margin-top: 20px;">Je suis actuellement à la recherche de nouvelles opportunités en <strong> Freelance</strong> ou en <strong>CDI</strong> pour mettre mes compétences au service de projets innovants.</p>
+                </div>
+                <div class="about-skills">
+                    <h3>Compétences Techniques</h3>
+                    <div class="skills-grid">
+                        <div class="skill-badge">PHP (PDO)</div>
+                        <div class="skill-badge">MySQL</div>
+                        <div class="skill-badge">JavaScript</div>
+                        <div class="skill-badge">React.js</div>
+                        <div class="skill-badge">HTML5/CSS3</div>
+                        <div class="skill-badge">GitHub</div>
+                        <div class="skill-badge">WhatsApp API</div>
+                        <div class="skill-badge">Responsive Design</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Projets -->
+        <section id="projets" class="reveal">
+            <h2 style="margin-bottom: 20px;">Mes Réalisations</h2>
+            <p style="color: var(--text-secondary); margin-bottom: 40px;">Une sélection de projets récents démontrant mon expertise technique.</p>
+            
+            <div class="portfolio-grid">
+                <!-- Projet 1: Stockly -->
+                <div class="project-card">
+                    <img src="assets/stockly.webp" alt="Stockly Inventory System" class="project-img">
+                    <div class="project-content">
+                        <h3>Stockly</h3>
+                        <p>Système de gestion d'inventaire complet permettant le suivi des stocks en temps réel et la gestion des commandes.</p>
+                        <div class="project-tags">
+                            <span class="tag">PHP</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">Bootstrap</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#">GitHub</a>
+                            <a href="#" class="view-project" data-project="stockly">Voir Détails</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 2: HonyHub -->
+                <div class="project-card">
+                    <img src="assets/honyhub.webp" alt="HonyHub Platform" class="project-img">
+                    <div class="project-content">
+                        <h3>HonyHub</h3>
+                        <p>Plateforme e-commerce et de gestion commerciale avec tableau de bord administrateur dynamique.</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">PostgreSQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#">GitHub</a>
+                            <a href="#" class="view-project" data-project="honyhub">Voir Détails</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 3: Pressing App -->
+                <div class="project-card">
+                    <img src="assets/pressing.webp" alt="Pressing App" class="project-img">
+                    <div class="project-content">
+                        <h3>Pressing App</h3>
+                        <p>Application de gestion pour services de pressing avec notifications automatiques via l'API WhatsApp.</p>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">WhatsApp API</span>
+                            <span class="tag">CSS3</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#">GitHub</a>
+                            <a href="#" class="view-project" data-project="pressing">Voir Détails</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 4: Admin Dashboard -->
+                <div class="project-card">
+                    <img src="assets/dashboard.webp" alt="Admin Dashboard" class="project-img">
+                    <div class="project-content">
+                        <h3>Admin Dashboard</h3>
+                        <p>Interface d'administration temps réel pour la surveillance des ventes et des activités utilisateurs.</p>
+                        <div class="project-tags">
+                            <span class="tag">Chart.js</span>
+                            <span class="tag">PHP</span>
+                            <span class="tag">AJAX</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#">GitHub</a>
+                            <a href="#" class="view-project" data-project="dashboard">Voir Détails</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Contact -->
+        <section id="contact" class="reveal">
+            <h2>Prêt à lancer votre projet ?</h2>
+            <p style="color: var(--text-secondary);">Besoin d’un développeur ? Contactez-moi pour discuter de vos besoins techniques.</p>
+            
+            <div class="contact-container">
+                <div class="contact-details">
+                    <div class="contact-info-list" style="display: flex; flex-direction: column; gap: 30px;">
+                        <div class="contact-item" style="align-items: flex-start;">
+                            <div class="contact-icon">✉</div>
+                            <div style="text-align: left;">
+                                <p style="font-weight: 600;">Email</p>
+                                <span style="color: var(--text-secondary);">tefogangstevelandry@gmail.com</span>
+                            </div>
+                        </div>
+                        <div class="contact-item" style="align-items: flex-start;">
+                            <div class="contact-icon">📱</div>
+                            <div style="text-align: left;">
+                                <p style="font-weight: 600;">WhatsApp / Téléphone</p>
+                                <span style="color: var(--text-secondary);">+237 696 16 50 61</span>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 20px; margin-top: 20px;">
+                            <a href="#" class="contact-icon">in</a>
+                            <a href="#" class="contact-icon">gh</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <div id="fs-status" style="margin-bottom: 20px;">
+                        <div data-fs-success style="display: none; padding: 15px; border-radius: 10px; background: rgba(34, 197, 94, 0.1); color: #4ade80; border: 1px solid rgba(34, 197, 94, 0.2); margin-bottom: 20px;">
+                            Merci ! Votre message a bien été envoyé. Je vous répondrai sous peu.
+                        </div>
+                        <div data-fs-error style="display: none; padding: 15px; border-radius: 10px; background: rgba(239, 68, 68, 0.1); color: #f87171; border: 1px solid rgba(239, 68, 68, 0.2); margin-bottom: 20px;">
+                            Oups ! Une erreur est survenue lors de l'envoi. Veuillez réessayer.
+                        </div>
+                    </div>
+
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nom complet</label>
+                            <input type="text" id="name" name="name" placeholder="Votre nom" required data-fs-field>
+                            <span data-fs-error="name" style="font-size: 0.8rem; color: #f87171; display: block; margin-top: 5px;"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="votre@email.com" required data-fs-field>
+                            <span data-fs-error="email" style="font-size: 0.8rem; color: #f87171; display: block; margin-top: 5px;"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Parlez-moi de votre projet" required data-fs-field></textarea>
+                            <span data-fs-error="message" style="font-size: 0.8rem; color: #f87171; display: block; margin-top: 5px;"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;" data-fs-submit-btn>Envoyer le message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Steve Authentique. Fait avec passion.</p>
+    </footer>
+
+    <!-- Modal Project Details -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modal-body">
+                <!-- Content injected by JS -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+        formspree('initForm', { formElement: '#contact-form', formId: 'mdayelqk' });
+    </script>
+    <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
+</body>
+</html>
